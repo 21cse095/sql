@@ -1,0 +1,3 @@
+select  DISTINCT i.Title,i.Rating from IMDB as i join earning as e on i.Movie_id=e.Movie_id where i.MetaCritic>60 and e.Domestic>100000000 and i.Title like '%(2012)';
+Print the title and ratings of the movies released in 2012 whose metacritic rating is more than 60 and Domestic collections exceed 10 Crores. (Download the dataset from console)
+
