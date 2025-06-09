@@ -1,0 +1,21 @@
+update Salary set sex=case when sex='m'then 'f' else 'm'end;
+
+Problem statement
+Write an SQL query to swap all employee genders in the Salary table.
+
+
+Table: Salary
+
++-------------+----------+
+| Column Name | Type     |
++-------------+----------+
+| id          | int      |
+| name        | varchar  |
+| sex         | ENUM     |
+| salary      | int      |
++-------------+----------+
+id is the primary key for this table.
+The sex column is ENUM value of type ('m', 'f').
+The table contains information about an employee.
+
+IN THE QUERY CASE IS SIMILAR TO SWITCH CASE WE USE IN JAVA , WHEN FOLLOWED BY CONDITION THEN RESULT.
